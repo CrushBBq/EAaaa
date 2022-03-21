@@ -22,7 +22,7 @@
                                                   <!-- /一级/二级 -->
           <el-menu-item index="1-1" @click="go('/about/households')">户信息列表</el-menu-item>
         <el-menu-item index="1-2" @click="go('/about/addyonghu')">新增用户</el-menu-item>
-         <el-menu-item index="1-3" @click="go('/about/aa')">aaa</el-menu-item>
+         <el-menu-item index="1-3" @click="go('/about/aa')">新增设备</el-menu-item>
         </el-menu-item-group>
         
       </el-submenu>
@@ -63,8 +63,6 @@
         </template>
         <el-menu-item-group>
           <el-menu-item index="8-1" @click="go('/about/qutongji')">区域统计</el-menu-item>
-          <el-menu-item index="8-2">厂家统计</el-menu-item>
-          <el-menu-item index="8-3">工程统计</el-menu-item>
         </el-menu-item-group>
        
         

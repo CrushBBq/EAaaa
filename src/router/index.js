@@ -97,22 +97,22 @@ const router = new VueRouter({
   routes
 })
 /* 全局前置守卫 */
-router.beforeEach((to,from,next)=>{
-	/* console.log(this.$store.state.a); */
-	//从sessionStorage中取isLogin变量的值
-	var isLog=sessionStorage.getItem("LoginUser");
-  // 当前要进入的路径
-	if(to.path=="/"){
-		next();//允许访问 通过
-	}else{
-		if(isLog!=null&&isLog!=undefined){//登陆了
-			next();
-		}else{//没登录
-			//去登录
-			next({path:'/'})
-		}
-	}
+// router.beforeEach((to,from,next)=>{
+// 	/* console.log(this.$store.state.a); */
+// 	//从sessionStorage中取isLogin变量的值
+// 	var isLog=sessionStorage.getItem("LoginUser");
+//   // 当前要进入的路径
+// 	if(to.path=="/"){
+// 		next();//允许访问 通过
+// 	}else{
+// 		if(isLog!=null&&isLog!=undefined){//登陆了
+// 			next();
+// 		}else{//没登录
+// 			//去登录
+// 			next({path:'/'})
+// 		}
+// 	}
 	
-})
+// })
 
 export default router

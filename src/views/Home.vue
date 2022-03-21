@@ -73,6 +73,7 @@ export default {
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           console.log(valid)
+          this.$router.push("/about")
           if (valid) {//验证通过
             this.$axios.get('http://1.116.39.28:8880/login',{
               params:{
